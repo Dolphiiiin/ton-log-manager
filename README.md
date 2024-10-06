@@ -1,4 +1,5 @@
 # ToN log manager
+![readme-image](https://github.com/user-attachments/assets/9c6270d5-1f1b-4203-9ae4-cb4905155b15)
 
 ## 概要
 ToN log managerは、Terrors of Nowhereでのログを管理および表示するためのツールです。ログのフィルタリング、フォーマット、およびハイライト表示をサポートします。

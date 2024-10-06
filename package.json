@@ -1,0 +1,22 @@
+{
+  "name": "ton-log-manager",
+  "productName": "ToN Log Manager",
+  "version": "1.0.0",
+  "description": "A log manager for ton",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-packager . --overwrite --platform=win32 --arch=x64 ---prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.7",
+    "electron-packager": "^17.1.2"
+  }
+}

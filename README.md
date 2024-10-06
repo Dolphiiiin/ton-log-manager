@@ -14,7 +14,7 @@ ToNSaveManagerを起動して、設定のWebSocket API Serverを有効にして�
 
 1. リポジトリをクローンします。
     ```bash
-    git clone https://github.com/yourusername/ton-log-manager.git
+    git clone https://github.com/Dolphiiiin/ton-log-manager.git
     ```
 
 2. 必要な依存関係をインストールします。

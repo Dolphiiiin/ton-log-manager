@@ -2,6 +2,8 @@
 
 ## 概要
 ToN log managerは、Terrors of Nowhereでのログを管理および表示するためのツールです。ログのフィルタリング、フォーマット、およびハイライト表示をサポートします。
+DolphiiiinがTonをプレイするときに使いたかった個人的なプロジェクトであるため、自己責任で使用してください。
+## [ダウンロード](https://github.com/Dolphiiiin/ton-log-manager/releases/download/1.0.0/ToN.Log.Manager-1.0.0.zip)
 
 ## 環境依存
 このプロジェクトを使用するためには、[ToNSaveManager](https://github.com/ChrisFeline/ToNSaveManager)でWebSocket API Serverが有効である必要があります。

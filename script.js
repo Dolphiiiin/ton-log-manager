@@ -110,7 +110,7 @@ function formatEventDetails(event) {
 
             // Check if ROUND_TYPE is Bloodbath and transform TERRORS display
             const round = currentState['ROUND_TYPE'] || {};
-            if (round.DisplayName === 'Bloodbath') {
+            if (round.DisplayName === 'Bloodbath' || round.DisplayName === 'ブラッドバス') {
                 const names = displayName.split(' & ');
                 if (names.length > 1) {
                     displayName = `${names[1]} & ??? & ???`;
@@ -192,7 +192,7 @@ function createQuickViewTable() {
         let displayName = terrors.DisplayName || 'N/A';
 
         // Check if ROUND_TYPE is Bloodbath and transform TERRORS display
-        if (round.DisplayName === 'Bloodbath') {
+        if (round.DisplayName === 'Bloodbath' || round.DisplayName === 'ブラッドバス') {
             const names = displayName.split(' & ');
             if (names.length > 1) {
                 displayName = `${names[1]} & ??? & ???`;
@@ -240,7 +240,7 @@ function createLogTable(activeTab) {
             switch (log.Type) {
                 case 'ROUND_TYPE':
                     value = log.DisplayName;
-                    if (value !== 'Classic' || log.Command === 255) {  // Include reset events
+                    if ((log.Name !== 'Classic') || log.Command === 255) {  // Include reset events
                         highlightStyle = 'background-color: var(--highlight-color);';
                     }
                     break;
@@ -328,8 +328,8 @@ function createFormatedLogTable() {
             let roundTypeStyle = '';
             let terrorsStyle = '';
 
-            // Set background color for ROUND_TYPE if it's not 'Classic'
-            if (log.roundType && log.roundType !== 'N/A' && log.roundType !== 'Classic') {
+            // Set background color for ROUND_TYPE if it's not 'Classic' or 'クラシック'
+            if (log.roundType && log.roundType !== 'N/A' && log.roundType !== 'Classic' && log.roundType !== 'クラシック') {
                 roundTypeStyle = 'background-color: var(--highlight-color);'; // Use the highlight color
             }
 

@@ -1,7 +1,10 @@
 # ToN log manager
+![readme-image](https://github.com/user-attachments/assets/9c6270d5-1f1b-4203-9ae4-cb4905155b15)
 
 ## 概要
 ToN log managerは、Terrors of Nowhereでのログを管理および表示するためのツールです。ログのフィルタリング、フォーマット、およびハイライト表示をサポートします。
+DolphiiiinがTonをプレイするときに使いたかった個人的なプロジェクトであるため、自己責任で使用してください。
+## [ダウンロード](https://github.com/Dolphiiiin/ton-log-manager/releases/download/1.0.0/ToN.Log.Manager-1.0.0.zip)
 
 ## 環境依存
 このプロジェクトを使用するためには、[ToNSaveManager](https://github.com/ChrisFeline/ToNSaveManager)でWebSocket API Serverが有効である必要があります。
@@ -11,7 +14,7 @@ ToNSaveManagerを起動して、設定のWebSocket API Serverを有効にして�
 
 1. リポジトリをクローンします。
     ```bash
-    git clone https://github.com/yourusername/ton-log-manager.git
+    git clone https://github.com/Dolphiiiin/ton-log-manager.git
     ```
 
 2. 必要な依存関係をインストールします。
